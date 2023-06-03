@@ -1,9 +1,5 @@
 import React from 'react'
 
-const ResultTest = () => {
-  return (
-    <div>ResultTestPage</div>
-  )
+export const ResultTestPage = () => {
+    return <div>ResultTestPage</div>
 }
-
-export default ResultTest

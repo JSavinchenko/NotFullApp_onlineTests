@@ -3,18 +3,18 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { createTest } from '../redux/features/test/testSlice'
 
-import Button  from 'react-bootstrap/Button';
-import Form  from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
-const CreateTestPage = () => {
-  //const [name, setName] = useState('')
-  //const [description, setDescription] = useState('')
+export const CreateTestPage = () => {
+    //const [name, setName] = useState('')
+    //const [description, setDescription] = useState('')
 
-  /*const [question, setQuestion] = useState([
+    /*const [question, setQuestion] = useState([
 
   ])*/
 
-  /*const [results, setResults] = useState([
+    /*const [results, setResults] = useState([
     {
       id: 1,
       title: 'test1111111'
@@ -50,9 +50,9 @@ const CreateTestPage = () => {
     setResults(newResult)
   }*/
 
-  return (
-    <Form className="m-5 p-5 border bg-light" onSubmit={(e) => e.preventDefault()}>
-      {/* <Form.Text style={{fontSize: 30}}>Создание теста</Form.Text>
+    return (
+        <Form className='m-5 p-5 border bg-light' onSubmit={e => e.preventDefault()}>
+            {/* <Form.Text style={{fontSize: 30}}>Создание теста</Form.Text>
       <Form.Group controlId="formNameTest">
         <Form.Label className="mt-2">Название: </Form.Label>
         <Form.Control 
@@ -94,7 +94,7 @@ const CreateTestPage = () => {
         >Добавить вопрос</Button>
       </Form.Group> */}
 
-      {/* <Form.Group controlId="formResultTest">
+            {/* <Form.Group controlId="formResultTest">
         <Form.Label className="mt-3">Результаты:</Form.Label>
         <Form.Control as="textarea" rows={2} className="mt-2" />
         <Form.Control as="textarea" rows={2} className="mt-2" />
@@ -104,9 +104,9 @@ const CreateTestPage = () => {
         className="mt-3"
         style={{float: 'right'}}
         >+</Button>
-      </Form.Group>  */} 
+      </Form.Group>  */}
 
-      {/* <Form.Group controlId="formResultTest">
+            {/* <Form.Group controlId="formResultTest">
         <Form.Label className="mt-3">Результаты:</Form.Label>
         <Form.Control as="textarea" rows={2} className="mt-2" value={result} onChange={(e) => setResult(e.target.value)}/>
         <Button 
@@ -116,7 +116,7 @@ const CreateTestPage = () => {
         style={{float: 'right'}}
         onClick={addResult}
         >+</Button> */}
-        {/* <div>
+            {/* <div>
           {
             results.map(item => (
               <div key={item.id}>
@@ -128,15 +128,13 @@ const CreateTestPage = () => {
         </div> 
       </Form.Group> */}
 
-      {/* <Button 
+            {/* <Button 
         variant="secondary" 
         size="lg"
         type="submit" 
         className="mt-5"
         onClick={submitHandler}
         >Создать тест</Button> */}
-    </Form>
-  )
+        </Form>
+    )
 }
-
-export default CreateTestPage
